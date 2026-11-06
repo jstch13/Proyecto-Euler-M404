@@ -7,7 +7,7 @@
 
 k = int(input("Escribe el divisor que debe cumplir n: "))
 
-#Usando ideas similares a otros ejercicios
+#Usando ideas similares del ejercicio 76
 def subgrupos(n):
     sb = [0] * (n + 1)
     sb[0] = 1
@@ -28,6 +28,7 @@ def subgrupos(n):
     return sb[n] 
 
 encontrado = False
+
 #no supe como reducir los limites de busqueda sin que sea haga muy largo la ejecucion del codigo 
 #aunque usando algo como k/19 = a y k/18 = b, sirven, solo que no tengo capacidad de computo para hacerlo
 a = 55370

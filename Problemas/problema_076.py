@@ -9,12 +9,13 @@
 
 n_i = int(input("Número que se desea encontrar sus posible sumas con dos o mas numeros: "))
 
-#Definimos una funcion que cuenta los subgrupos a partir de el teorema de los numeros pentagonales
+#Definimos una funcion que cuenta los subgrupos a partir de el teorema de los numeros pentagonales de euler y su recursion
 
 def subgrupos(n):
   sb = [0] * (n + 1)
   sb[0] = 1
-#definimos una forma de hallar los numeros pemtagonales generalizados por medio de un bucle que recorre de 1 a n
+
+#definimos una forma de hallar los numeros pemtagonales generalizados para 1 al n
   for i in range(1, n + 1):
     j = 1
     signo = 1
@@ -24,7 +25,8 @@ def subgrupos(n):
 
       if pentagonal1 > i:
         break
-#la recurrencia que descubrio euler 
+#la recurrencia que descubrio euler, pues los numero sb(n_k) depende de los anteriores y de los numeros pentagonales
+#pues la recursion son hable de sb(n) = sb(n-1) + sb(n-2) - sb(n-3) ... -+ sb(1)
       sb[i] += signo * sb[i - pentagonal1]
 
       if pentagonal2 <= i:
@@ -35,7 +37,7 @@ def subgrupos(n):
 
   return sb[n]
 
-#subgrupos de n, menos la condicion de ser al menos 2 numeros
+#subgrupos de n, menos la condicion de ser al menos 2 numeros, o bien sb(1)
 resultado = subgrupos(n_i) - 1
 
 print(f"Total de formas de sumar 100 con al menos dos números: "f" {resultado}")

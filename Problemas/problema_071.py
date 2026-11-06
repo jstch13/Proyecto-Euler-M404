@@ -13,7 +13,7 @@ ad = float(numerador)/float(denominador)
 #como el denominador mayor es d menor a 1000000, entonces tendra que usarse d = 999999
 n_m = int((ad)*1000000)
 #como 1 millon no esta permitido, la relacion entre el valor n_f con un millon 
-#es practicamente la misma entre n_f-1 y 999999, pues son numeros bastante grandes
+#es practicamente la misma entre n_f-1 y 999999, pues son numeros bastante grandes y esa es la mejor aproximacion por la izquierda
 
 n_f = n_m - 1
 print(n_f)

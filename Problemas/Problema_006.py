@@ -11,6 +11,7 @@ n_1 = input("El número superior: ")
 n = int(n_1)
 
 #usando formulas conocidas de suma de cuadrados y sumara de enteros 
+#n(n+1)/2 y n(n+1)(2n+1)/6
 n_f = (n*(n+1)/2)**2 - (n*(n+1)*(2*n+1)/6)
 
 print(n_f)
