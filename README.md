@@ -9,6 +9,8 @@ Usuario: jst.ch1323
 
 Curso: m404
 
+Enlace del Colab: https://colab.research.google.com/drive/13smtXCvILFglQPxviK53sCSKHpXbQo0a?usp=sharing
+
 Yo, Jostin Chamalé carné 202509120
 Declaro que las soluciones, los algoritmos, el código, las pruebas y las explicaciones de este
 notebook y este repositorio fueron elaborados directamente por mí, sin utilizar inteligencia
